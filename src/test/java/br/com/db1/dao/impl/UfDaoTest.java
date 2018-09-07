@@ -36,7 +36,7 @@ public class UfDaoTest extends AbstractTestCase {
 
 	@Test
 	public void findByIdTest() {
-		
+
 	}
 
 	@Test
@@ -70,11 +70,10 @@ public class UfDaoTest extends AbstractTestCase {
 		dao.save(uf);
 
 		Assert.assertTrue(dao.findAll().size() == 1);
-		
+
 		uf.setNome("RR");
 		dao.save(uf);
 		Assert.assertTrue(dao.findAll().size() == 1);
-
 
 	}
 
@@ -92,7 +91,7 @@ public class UfDaoTest extends AbstractTestCase {
 		dao.save(uf);
 
 		Assert.assertTrue(dao.findAll().size() == 1);
-		
+
 		dao.delete(uf.getId());
 		Assert.assertTrue(dao.findAll().size() == 0);
 
